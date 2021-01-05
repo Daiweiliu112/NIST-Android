@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/night" />
+
+    <ImageView
+        android:id="@+id/back_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/night"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-49dp" />
+
+    <TextView
+        android:id="@+id/test_result"
+        android:layout_width="162dp"
+        android:layout_height="58dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_1"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <Button
+        android:onClick="writeFileExternalStorage"
+        android:id="@+id/submit_button"
+        android:layout_width="205dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_button"
+        android:text="Submit Test"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_result"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="214dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/custom_button"
+        android:text="Restart Test"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="386dp"
+        android:layout_height="76dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Note: The back button have been disabled on this page."
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/test_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

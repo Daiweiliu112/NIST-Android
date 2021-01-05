@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NIST_android_v1</string>
+    <string name ="greet0">Welcome!</string>
+    <string name ="greet0_1">Lets get you started!</string>
+    <string name ="next">Start</string>
+    <string name = "go">Next</string>
+    <string name = "Question">Please select all that applies</string>
+    <string name="rationale_location_contacts">asking permission</string>
+</resources>
